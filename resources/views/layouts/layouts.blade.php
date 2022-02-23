@@ -10,9 +10,9 @@
     <title>@yield('title')</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url('css/app.css') }}">
-    <link rel="stylesheet" href="{{ url('fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>
         #main-vocab {
             margin-bottom: 65px;
@@ -42,8 +42,8 @@
         </a>
     </nav>
     {{-- <script src="{{ mix('js/app.js') }}" defer></script> --}}
-    <script src="{{ url('js/jquery.js') }}"></script>
-    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script>
         $(document).ready(function(){
             $.ajaxSetup({
