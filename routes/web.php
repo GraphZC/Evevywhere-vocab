@@ -24,7 +24,7 @@ Route::middleware([Authenticate::class])->group(function () {
         return view('welcome');
     });
 
-    //Route::get('/', [VocabularyController::class, 'home'])->name('home');
+    Route::get('/', [VocabularyController::class, 'home'])->name('home');
     Route::get('/vocab/get/{word}/', [VocabularyController::class, 'fetchWord'])->name('word.find');
     Route::get('/favorite', [VocabularyController::class, 'favorite'])->name('favorite');
     Route::get('/vocab/get/fav/{word}/', [VocabularyController::class, 'fetchFav'])->name('word.find.fav');
