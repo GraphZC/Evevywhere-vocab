@@ -19,7 +19,7 @@ Route::get('/login', [GoogleController::class, 'redirectToGoogle'])->name('login
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
-Route::middleware([Authenticate::class])->group(function () {
+// Route::middleware([Authenticate::class])->group(function () {
     // Route::get('/', function () {
     //     return view('welcome');
     // });
@@ -35,4 +35,4 @@ Route::middleware([Authenticate::class])->group(function () {
     Route::post('/vocab/edit/save/', [VocabularyController::class, 'saveEdit'])->name("word.edit.save");
     Route::get('/voacb/json/{id}', [VocabularyController::class, 'fetchJson']);
     Route::post('/vocab/add/save/', [VocabularyController::class, 'addWord'])->name("word.add.save");
-});
+// });
