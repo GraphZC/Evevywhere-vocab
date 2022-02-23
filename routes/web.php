@@ -20,9 +20,9 @@ Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
 Route::middleware([Authenticate::class])->group(function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    // Route::get('/', function () {
+    //     return view('welcome');
+    // });
 
     Route::get('/', [VocabularyController::class, 'home'])->name('home');
     Route::get('/vocab/get/{word}/', [VocabularyController::class, 'fetchWord'])->name('word.find');
