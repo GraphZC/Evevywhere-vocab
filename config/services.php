@@ -33,6 +33,7 @@ return [
         'client_id' => '885234046660-e7ggpkvvcjrqjcu53nke2unu51at4t78.apps.googleusercontent.com',
         'client_secret' => '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',
         'redirect' => 'https://everywhere-vocab.herokuapp.com/auth/google/callback'
+        //'redirect' => 'http://127.0.0.1:8000/auth/google/callback'
     ],
 
 ];
